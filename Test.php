@@ -7,13 +7,18 @@ include_once 'Crud.php';
 $crud = new Crud();
 
 $data_array = [
-    'sku' => 4,
-    'name' => 'Pistol',
-    'price' => 12,9,
-    'size' => 2,
-    'weight' => null,
-    'dimensions' => null
+    'name' => 'Glasses',
+    'price' => 29.9,
+    'size' => 4
 
 ];
 
-$crud->create($data_array, 'items');
+// $crud->create($data_array, 'items');
+
+// $result = $crud->read('SELECT * FROM items');
+
+// $crud->update("UPDATE items SET name = 'sword' WHERE it_id = 1");
+
+// var_dump($result);
+
+$crud->delete('DELETE FROM items WHERE it_id=3');

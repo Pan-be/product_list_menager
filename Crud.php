@@ -24,4 +24,22 @@ class Crud {
         $stmt->execute($data_array);
         return $this->conn->lastInsertId();
     }
+
+    public function read($sql_query) {
+        $stmt = $this->conn->prepare($sql_query);
+        $stmt->execute();
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function update($sql_query)
+    {
+        $stmt = $this->conn->prepare($sql_query);
+        $stmt->execute();
+    }
+
+    public function delete($sql_query) {
+        $stmt = $this->conn->prepare($sql_query);
+        $stmt->execute();
+    }
 }
