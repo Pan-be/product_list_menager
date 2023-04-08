@@ -270,42 +270,42 @@ updateFields();
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="size_mb">Size (MB):</label>
+                                        <label class="control-label col-sm-2" for="size">Size (MB):</label>
                                         <div class="col-sm-10">
-                                            <input type="size" class="form-control" id="size_mb" placeholder=""
-                                                name="size_mb" value="">
+                                            <input type="size" class="form-control form-field" id="size" placeholder=""
+                                                name="size" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="weight_kg">Weight (KG):</label>
+                                        <label class="control-label col-sm-2" for="weight">Weight (KG):</label>
                                         <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="weight_kg" placeholder=""
-                                                name="weight_kg" value="">
+                                            <input type="number" class="form-control form-field" id="weight" placeholder=""
+                                                name="weight" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="height_cm">Height (CM):</label>
+                                        <label class="control-label col-sm-2" for="height">Height (CM):</label>
                                         <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="height_cm" placeholder=""
-                                                name="height_cm" value="">
+                                            <input type="number" class="form-control form-field" id="height" placeholder=""
+                                                name="height" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="width_cm">Width (CM):</label>
+                                        <label class="control-label col-sm-2" for="width">Width (CM):</label>
                                         <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="width_cm" placeholder=""
-                                                name="width_cm" value="">
+                                            <input type="number" class="form-control form-field" id="width" placeholder=""
+                                                name="width" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="length_cm">Length (CM):</label>
+                                        <label class="control-label col-sm-2" for="length">Length (CM):</label>
                                         <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="length_cm" placeholder=""
-                                                name="length_cm" value="">
+                                            <input type="number" class="form-control form-field" id="length" placeholder=""
+                                                name="length" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
