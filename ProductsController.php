@@ -15,15 +15,20 @@ class ProductsController
     public function addProduct()
     {
         $product_data = [
-            'sku'=$_POST('sku'),
-            'name'=$_POST('name'),
-            'price'=$_POST('price'),
-            'size_mb'=$_POST('size_mb'),
-            'weight_kg'=$_POST('weight_kg'),
-            'height_cm'=$_POST('height_cm'),
-            'width_cm'=$_POST('width_cm'),
-            'length_cm'=$_POST('length_cm')
+            'sku'=>$_POST['sku'],
+            'name'=>$_POST['name'],
+            'price'=>$_POST['price']
         ];
+
+        // pętla foreach dla pól wymagających walidacji
+        $fields = ['size_mb', 'weight_kg', 'height_cm', 'width_cm', 'length_cm'];
+        foreach ($fields as $field) {
+            if (!empty($_POST[$field])) {
+                $product_data[$field] = $_POST[$field];
+            } else {
+                $product_data[$field] = null;
+            }
+        }
 
         $this->crud->create($product_data,'products');
     }

@@ -1,9 +1,9 @@
 const productType = document.getElementById("productType")
-const size = document.getElementById("size")
-const weight = document.getElementById("weight")
-const height = document.getElementById("height")
-const width = document.getElementById("width")
-const length = document.getElementById("length")
+const size = document.getElementById("size_mb")
+const weight = document.getElementById("weight_kg")
+const height = document.getElementById("height_cm")
+const width = document.getElementById("width_cm")
+const length = document.getElementById("length_cm")
 
 size.parentElement.parentElement.style.display = "none"
 weight.parentElement.parentElement.style.display = "none"
@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			height.parentElement.parentElement.style.display = "block"
 			width.parentElement.parentElement.style.display = "block"
 			length.parentElement.parentElement.style.display = "block"
+		} else {
+			size.parentElement.parentElement.style.display = "none"
+			weight.parentElement.parentElement.style.display = "none"
+			height.parentElement.parentElement.style.display = "none"
+			width.parentElement.parentElement.style.display = "none"
+			length.parentElement.parentElement.style.display = "none"
 		}
 	}
 

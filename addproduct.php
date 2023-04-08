@@ -221,7 +221,7 @@ updateFields();
                                 </div>
                                 <div id="add-movie-form-container">
                                     <form class="form-horizontal" method="post" id="product_form"
-                                         autocomplete="off"
+                                        action='addproduct.php' autocomplete="off"
                                         enctype="multipart/form-data" />
                                     <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">
@@ -248,10 +248,10 @@ updateFields();
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="email">Price ($):</label>
+                                        <label class="control-label col-sm-2" for="price">Price ($):</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="title" placeholder=""
-                                                name="mv_title" value="">
+                                            <input type="text" class="form-control" id="price" placeholder=""
+                                                name="price" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
@@ -270,42 +270,42 @@ updateFields();
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="size">Size (MB):</label>
+                                        <label class="control-label col-sm-2" for="size_mb">Size (MB):</label>
                                         <div class="col-sm-10">
-                                            <input type="size" class="form-control" id="size" placeholder=""
-                                                name="size" value="">
+                                            <input type="size" class="form-control" id="size_mb" placeholder=""
+                                                name="size_mb" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="weight">Weight (KG):</label>
+                                        <label class="control-label col-sm-2" for="weight_kg">Weight (KG):</label>
                                         <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="weight" placeholder=""
-                                                name="weight" value="">
+                                            <input type="number" class="form-control" id="weight_kg" placeholder=""
+                                                name="weight_kg" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="height">Height (CM):</label>
+                                        <label class="control-label col-sm-2" for="height_cm">Height (CM):</label>
                                         <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="height" placeholder=""
-                                                name="height" value="">
+                                            <input type="number" class="form-control" id="height_cm" placeholder=""
+                                                name="height_cm" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="width">Width (CM):</label>
+                                        <label class="control-label col-sm-2" for="width_cm">Width (CM):</label>
                                         <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="width" placeholder=""
-                                                name="width" value="">
+                                            <input type="number" class="form-control" id="width_cm" placeholder=""
+                                                name="width_cm" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label col-sm-2" for="length">Length (CM):</label>
+                                        <label class="control-label col-sm-2" for="length_cm">Length (CM):</label>
                                         <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="length" placeholder=""
-                                                name="length" value="">
+                                            <input type="number" class="form-control" id="length_cm" placeholder=""
+                                                name="length_cm" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
