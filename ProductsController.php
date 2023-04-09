@@ -48,4 +48,13 @@ class ProductsController
     $this->crud->create($product_data, 'products');
     echo "Product added successfully";
     }
+
+    public function getProducts()
+    {
+        $query = 'SELECT * FROM products';
+
+        $results = $this->crud->read($query);
+
+        return $results;
+    }
 }
