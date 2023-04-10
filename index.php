@@ -117,17 +117,18 @@
 
                         include_once './ProductsController.php';
                         $productController = new ProductsController;
-                        $product = $productController->getProducts();
+                        $products = $productController->getProducts();
 
         ?>
         <div class="container marketing">
             <h3 class="mv-category-title">Most Popular</h3>
             <div class="row" style="min-height: 300px;">
                 <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                    <?php foreach($products as $key=>$product) {?>
                     <div class="card">
                         <img class="card-img-top" src="images/movie_covers/murder in miami.PNG">
                         <div class="card-block">
-                            <h4 class="card-title">Murder in miami</h4>
+                            <h4 class="card-title"><?= $product['name']?></h4>
                         </div>
                         <div class="card-footer">
                             <div id="mv-details-container">
@@ -141,6 +142,7 @@
                             </div>
                         </div>
                     </div>
+                    <?php } ?>
                 </div>
 
             </div>
