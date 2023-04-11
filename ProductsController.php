@@ -47,6 +47,9 @@ class ProductsController
 
     $this->crud->create($product_data, 'products');
     echo "Product added successfully";
+
+    header("Location: index.php");
+exit;
     }
 
     public function getProducts()

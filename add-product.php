@@ -14,7 +14,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Movies</title>
+    <title>Add Product</title>
     <meta charset="utf-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -71,16 +71,16 @@ updateFields();
 </script> -->
 
     <style>
-        .page-link {
-            background-color: unset !important;
-            padding: 6px 12px 6px 12px !important;
-            color: white;
-            border: none;
-        }
+    .page-link {
+        background-color: unset !important;
+        padding: 6px 12px 6px 12px !important;
+        color: white;
+        border: none;
+    }
 
-        .page-item {
-            padding-bottom: 4px;
-        }
+    .page-item {
+        padding-bottom: 4px;
+    }
     </style>
 
 
@@ -221,8 +221,7 @@ updateFields();
                                 </div>
                                 <div id="add-movie-form-container">
                                     <form class="form-horizontal" method="post" id="product_form"
-                                        action='addproduct.php' autocomplete="off"
-                                        enctype="multipart/form-data" />
+                                        action='add-product.php' autocomplete="off" enctype="multipart/form-data" />
                                     <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">
                                             <h4 class="pull-left">Product Add</h4>
@@ -234,16 +233,16 @@ updateFields();
                                     <div class="form-group">
                                         <label class="control-label col-sm-2" for="sku">SKU:</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="sku" placeholder=""
-                                                name="sku" value="">
+                                            <input type="text" class="form-control" id="sku" placeholder="" name="sku"
+                                                value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-2" for="name">Name:</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="name" placeholder=""
-                                                name="name" value="">
+                                            <input type="text" class="form-control" id="name" placeholder="" name="name"
+                                                value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
@@ -258,13 +257,13 @@ updateFields();
                                     <div class="form-group">
                                         <label class="control-label col-sm-2" for="pwd">Type switcher:</label>
                                         <div class="col-sm-10">
-                                            <select data-placeholder="Select Type"
-                                                class="form-control genre" name="productType" id="productType">
+                                            <select data-placeholder="Select Type" class="form-control genre"
+                                                name="productType" id="productType">
                                                 <option value="">Select Type</option>
                                                 <option value="1">DVD</option>
                                                 <option value="2">Book</option>
                                                 <option value="3">Furniture</option>
-                                            
+
                                             </select>
                                             <span class="help-block"></span>
                                         </div>
@@ -280,36 +279,36 @@ updateFields();
                                     <div class="form-group">
                                         <label class="control-label col-sm-2" for="weight">Weight (KG):</label>
                                         <div class="col-sm-10">
-                                            <input type="number" class="form-control form-field" id="weight" placeholder=""
-                                                name="weight" value="">
+                                            <input type="number" class="form-control form-field" id="weight"
+                                                placeholder="" name="weight" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-2" for="height">Height (CM):</label>
                                         <div class="col-sm-10">
-                                            <input type="number" class="form-control form-field" id="height" placeholder=""
-                                                name="height" value="">
+                                            <input type="number" class="form-control form-field" id="height"
+                                                placeholder="" name="height" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-2" for="width">Width (CM):</label>
                                         <div class="col-sm-10">
-                                            <input type="number" class="form-control form-field" id="width" placeholder=""
-                                                name="width" value="">
+                                            <input type="number" class="form-control form-field" id="width"
+                                                placeholder="" name="width" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-2" for="length">Length (CM):</label>
                                         <div class="col-sm-10">
-                                            <input type="number" class="form-control form-field" id="length" placeholder=""
-                                                name="length" value="">
+                                            <input type="number" class="form-control form-field" id="length"
+                                                placeholder="" name="length" value="">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
-                                   
+
 
                                     </form>
                                 </div>
@@ -333,8 +332,8 @@ updateFields();
         </div>
     </div>
     <script src="./js/productTypeHandling.js">
-    
-</script>
+
+    </script>
 
 </body>
 
