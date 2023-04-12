@@ -36,7 +36,7 @@
 
 
     <!-- Include English language -->
-    <script src="js/plugins/datepicker/dist/js/i18n/datepicker.en.js"></script>
+    <!-- <script src="js/plugins/datepicker/dist/js/i18n/datepicker.en.js"></script> -->
     <!-- <script src="./js/productTypeHandling.js"></script> -->
 
     <!-- <script>

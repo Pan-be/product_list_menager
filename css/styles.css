@@ -24,6 +24,7 @@ a {
 	font-weight: bold;
 	text-transform: uppercase;
 	transition: background-color 0.3s, color 0.3s;
+	border-radius: 5px;
 }
 
 button:hover,
@@ -86,9 +87,10 @@ main {
 	justify-content: center;
 	text-align: center;
 	position: relative;
+	border-radius: 5px;
 }
 
-.checkbox {
+.delete-checkbox {
 	position: absolute;
 	top: 10px;
 	left: 10px;

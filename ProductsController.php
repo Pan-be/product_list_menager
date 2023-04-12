@@ -60,4 +60,9 @@ exit;
 
         return $results;
     }
+
+    public function deleteProduct($product_id)
+    {
+        $this->crud->delete("DELETE FROM products WHERE id = $product_id");
+    }
 }

@@ -3,11 +3,11 @@ id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 sku VARCHAR(50) NOT NULL UNIQUE,
 name VARCHAR(100) NOT NULL,
 price DECIMAL(10, 2) NOT NULL,
-size_mb INT,
-weight_kg DECIMAL(6, 2),
-height_cm DECIMAL(6, 2),
-width_cm DECIMAL(6, 2),
-length_cm DECIMAL(6, 2)
+size INT,
+weight DECIMAL(6, 2),
+height DECIMAL(6, 2),
+width DECIMAL(6, 2),
+length DECIMAL(6, 2)
 );
 
 -- CREATE TABLE dvd (

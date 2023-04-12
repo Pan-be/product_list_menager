@@ -8,49 +8,64 @@
     <title>Products List</title>
 </head>
 
-<body><div class="containeer">
-    <header>
-        <h1>Product List</h1>
-        <ul class="menu-items">
-            <li class="menu-item"><a href="add-product.php">add</a></li>
-            <li><button id="mass-delete-btn">mass delete</button></li>
-        </ul>
-    </header>
-    <main>
-         <?php
+<body>
+    <?php
 
-                        include_once './ProductsController.php';
-                        $productController = new ProductsController;
-                        $products = $productController->getProducts();
+            include_once './ProductsController.php';
 
-         foreach($products as $key=>$product) {?>
-                
-                    <div class="card">
-                    <input type="checkbox" class="checkbox" />
-                        <div class="properties">
-                            <h4 class="card-title"><?= $product['sku']?></h4>
-                        
-                        
-                            <div id="details-container">
-                                <div><?= $product['name'] ?></div>
-                                <div><?= $product['price'] ?> $</div>
-                                <?php if (!empty($product['size'])): ?>
-                                <div class="properties">Size: <?= $product['size'] ?></div>
-                                <?php endif; ?>
-                                <?php if (!empty($product['weight'])): ?>
-                                <div class="properties">Weight: <?= $product['weight'] ?></div>
-                                <?php endif; ?>
-                                <?php if (!empty($product['height']) && !empty($product['width']) && !empty($product['length'])): ?>
-                                <div class="properties">Dimension:
-                                    <div><?= $product['height'] ?>x<?= $product['width'] ?>x<?= $product['length'] ?></div></div>
-                                <?php endif; ?>
-                            </div></div>
-                        
+            if(isset($_POST['delete_products'])) {
+                $product_ids = $_POST['product_id'];
+                $productController = new ProductsController;
+                foreach ($product_ids as $product_id) {
+                    $productController->deleteProduct($product_id);
+                }
+            }
+
+            $productController = new ProductsController;
+            $products = $productController->getProducts();
+
+            ?>
+    <form method="POST">
+        <div class="containeer">
+            <header>
+                <h1>Product List</h1>
+                <ul class="menu-items">
+                    <li class="menu-item"><a href="add-product.php">add</a></li>
+                    <li><button id="delete-product-btn" type="submit" name="delete_products">mass delete</button></li>
+                </ul>
+            </header>
+            <main>
+
+
+                <?php foreach($products as $key=>$product) {?>
+                <div class="card">
+                    <input type="checkbox" name="product_id[]" class="delete-checkbox" value="<?= $product['id'] ?>" />
+                    <div class="properties">
+                        <h4 class="card-title"><?= $product['sku']?></h4>
+                        <div id="details-container">
+                            <div><?= $product['name'] ?></div>
+                            <div><?= $product['price'] ?> $</div>
+                            <?php if (!empty($product['size'])): ?>
+                            <div class="properties">Size: <?= $product['size'] ?></div>
+                            <?php endif; ?>
+                            <?php if (!empty($product['weight'])): ?>
+                            <div class="properties">Weight: <?= $product['weight'] ?></div>
+                            <?php endif; ?>
+                            <?php if (!empty($product['height']) && !empty($product['width']) && !empty($product['length'])): ?>
+                            <div class="properties">Dimension:
+                                <div><?= $product['height'] ?>x<?= $product['width'] ?>x<?= $product['length'] ?></div>
+                            </div>
+                            <?php endif; ?>
+                        </div>
                     </div>
-               
+                </div>
                 <?php } ?>
-    </main>
-    <footer></footer></div>
+
+            </main>
+            <footer></footer>
+        </div>
+    </form>
+
 </body>
 
 </html>
