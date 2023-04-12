@@ -1,0 +1,72 @@
+* {
+	margin: 0;
+}
+body {
+	font-family: "Quicksand", sans-serif;
+	color: white;
+	background-color: rgb(9, 19, 12);
+}
+
+a {
+	color: gray;
+}
+
+p {
+	text-align: center;
+}
+
+.containeer {
+	margin: auto;
+	max-width: 1000px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.menu-items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: right;
+}
+
+.menu-item {
+	margin: 0 1rem;
+	justify-content: right;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 50px;
+}
+
+.card {
+	background-color: gray;
+	min-width: 200px;
+	min-height: 220px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+}
+
+.checkbox {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+    cursor: pointer;
+}
+
+.properties {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}

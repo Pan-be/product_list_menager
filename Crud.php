@@ -9,7 +9,6 @@ class Crud {
     public function __construct() {
         $this->conn = getdbconnection();
 
-        echo('success!');
     }
 
     public function create($data_array, $table)
