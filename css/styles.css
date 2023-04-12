@@ -7,8 +7,37 @@ body {
 	background-color: rgb(9, 19, 12);
 }
 
+button,
 a {
-	color: gray;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover,
+a:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+button:active,
+a:active {
+	background-color: gray;
+	color: white;
+	border: 2px solid gray;
 }
 
 p {
@@ -24,6 +53,8 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 40px;
 }
 
 .menu-items {
@@ -48,7 +79,7 @@ main {
 }
 
 .card {
-	background-color: gray;
+	background-color: grey;
 	min-width: 200px;
 	min-height: 220px;
 	display: flex;
@@ -61,7 +92,7 @@ main {
 	position: absolute;
 	top: 10px;
 	left: 10px;
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .properties {

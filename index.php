@@ -13,7 +13,7 @@
         <h1>Product List</h1>
         <ul class="menu-items">
             <li class="menu-item"><a href="add-product.php">add</a></li>
-            <li>mass delete</li>
+            <li><button id="mass-delete-btn">mass delete</button></li>
         </ul>
     </header>
     <main>
@@ -23,8 +23,7 @@
                         $productController = new ProductsController;
                         $products = $productController->getProducts();
 
-        ?>
-         <?php foreach($products as $key=>$product) {?>
+         foreach($products as $key=>$product) {?>
                 
                     <div class="card">
                     <input type="checkbox" class="checkbox" />
