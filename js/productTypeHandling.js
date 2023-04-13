@@ -14,8 +14,10 @@ function showFields(fieldsToShow) {
 	allFields.forEach((field) => {
 		if (fieldsToShow.includes(field.id)) {
 			field.parentElement.parentElement.style.display = "block"
+			field.required = true
 		} else {
 			field.parentElement.parentElement.style.display = "none"
+			field.required = false
 		}
 	})
 }

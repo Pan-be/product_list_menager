@@ -62,7 +62,15 @@
                 <?php } ?>
 
             </main>
-            <footer></footer>
+            <footer>
+                <h5>
+                    © copyright by
+                    <a href='https://business-card-pan-be.netlify.app/' target="blank">pan.be</a>
+                    <script>
+                    document.write(new Date().getFullYear())
+                    </script>
+                </h5>
+            </footer>
         </div>
     </form>
 

@@ -46,6 +46,8 @@ p {
 }
 
 .containeer {
+	display: flex;
+	flex-direction: column;
 	margin: auto;
 	max-width: 1000px;
 }
@@ -77,12 +79,13 @@ main {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 50px;
+	min-height: 69vh;
 }
 
 .card {
 	background-color: grey;
 	min-width: 200px;
-	min-height: 220px;
+	height: 220px;
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -102,4 +105,19 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+}
+
+@media (min-height: 100vh) {
+	footer {
+		position: static;
+		margin-top: auto;
+	}
 }

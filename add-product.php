@@ -34,42 +34,6 @@
 
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 
-
-    <!-- Include English language -->
-    <!-- <script src="js/plugins/datepicker/dist/js/i18n/datepicker.en.js"></script> -->
-    <!-- <script src="./js/productTypeHandling.js"></script> -->
-
-    <!-- <script>
-// Funkcja wywoływana po zmianie wartości w polu "select"
-function updateFields() {
-    var selectedOption = document.getElementById("productType").value;
-
-    // Ukryj wszystkie pola
-    document.getElementById("size").style.display = "none";
-    document.getElementById("weight").style.display = "none";
-    document.getElementById("height").style.display = "none";
-    document.getElementById("width").style.display = "none";
-    document.getElementById("length").style.display = "none";
-
-    // Wyświetl odpowiednie pola w zależności od wybranej opcji
-    if (selectedOption == 1) { // DVD
-        document.getElementById("size").style.display = "block";
-    } else if (selectedOption == 2) { // Book
-        document.getElementById("weight").style.display = "block";
-    } else if (selectedOption == 3) { // Furniture
-        document.getElementById("height").style.display = "block";
-        document.getElementById("width").style.display = "block";
-        document.getElementById("length").style.display = "block";
-    }
-}
-
-// Dodaj zdarzenie "change" do pola "select"
-document.getElementById("productType").addEventListener("change", updateFields);
-
-// Wywołaj funkcję po załadowaniu strony, aby pokazać odpowiednie pola na początku
-updateFields();
-</script> -->
-
     <style>
     .page-link {
         background-color: unset !important;
@@ -91,129 +55,9 @@ updateFields();
         <div class="row">
             <div class="col-sm-12" style="padding-left:0px;padding-right:0px;">
                 <div id="main-container">
-                    <!-- <aside id="left-sidebar">
-                        <div id="nav-brand-container">
-                            <div class="sidebar-row">
-                                <a id="nav-brand"> GoodMovies
-                                </a>
-                                <i id="bars" class="fas fa-bars"></i>
-                            </div>
-                        </div>
-                        <div id="profile-pic-container">
-                            <div class="sidebar-row">
-                                <img src="./images/admin.jpg" height="60px" width="60px">
-                                <ul id="button-container">
-                                    <li><strong><i>Welcome!</i> John Doe</strong><span class="active"></span></li>
-                                    <li style="color:#4f5967; font-size:10px;font-weight: 800">ADMINISTRATOR</li>
-                                    <li>
-                                        <button class="btn btn-edit-profile">Edit Profile</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="sidebar-row">
-                            <div id="sidebar-items">
-                                <ul>
-                                    <li>
-                                        <a href="admin.php">
-                                            <i class="fas fa-tachometer-alt"></i>
-                                            <span>Dashboard</span>
-                                            <i class="fas fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="admin.php">
-                                            <i class="fas fa-file-video"></i>
-                                            <span>Movies</span>
-                                            <i class="fas fa-chevron-right"></i>
-                                        </a>
 
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <i class="fas fa-tv"></i>
-                                            <span>Genres</span>
-                                            <i class="fas fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <i class="far fa-images"></i>
-                                            <span>Movie Icons</span>
-                                            <i class="fas fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                    <span style="color:#2d3e50">EXTRAS</span>
-                                    <li>
-                                        <a>
-                                            <i class="fas fa-tachometer-alt"></i>
-                                            <span>Dashboard</span>
-                                            <i class="fas fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <i class="fas fa-users"></i>
-                                            <span>Users</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <i class="fas fa-users-cog"></i>
-                                            <span>User Config</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <i class="fas fa-money-check-alt"></i>
-                                            <span>Payment Methods</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <i class="fas fa-tachometer-alt"></i>
-                                            <span>Invoices</span>
-                                            <i class="fas fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </aside> -->
                     <div id="main-panel">
-                        <!-- <div id="notifications-container">
-                            <h3>Movies</h3>
-                            <ul style="display: flex;margin-left:auto">
-                                <li>
-                                    <a class="nav-link">
-                                        <i class="fas fa-address-card"></i>
-                                    </a>
 
-                                </li>
-                                <li>
-                                    <a class="nav-link">
-                                        <i class="fas fa-envelope"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="nav-link">
-                                        <i class="fas fa-bell"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="nav-link">
-                                        <img src="./images/admin.jpg" height="25px" width="25px">
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a class="nav-link">
-                                        John Doe
-                                        <i class="fas fa-chevron-down"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div> -->
                         <div class="row">
                             <div class="col-sm-12">
                                 <div id="add-movie-header">
@@ -234,7 +78,7 @@ updateFields();
                                         <label class="control-label col-sm-2" for="sku">SKU:</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="sku" placeholder="" name="sku"
-                                                value="">
+                                                value="" required>
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
@@ -242,15 +86,15 @@ updateFields();
                                         <label class="control-label col-sm-2" for="name">Name:</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="name" placeholder="" name="name"
-                                                value="">
+                                                value="" required>
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-2" for="price">Price ($):</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="price" placeholder=""
-                                                name="price" value="">
+                                            <input type="number" class="form-control" id="price" placeholder=""
+                                                name="price" value="" required>
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
@@ -272,23 +116,24 @@ updateFields();
                                         <label class="control-label col-sm-2" for="size">Size (MB):</label>
                                         <div class="col-sm-10">
                                             <input type="size" class="form-control form-field" id="size" placeholder=""
-                                                name="size" value="">
-                                            <span class="help-block"></span>
+                                                name="size" value="" required>
+                                            <span>Please, enter the size of the video in
+                                                megabytes.</span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-2" for="weight">Weight (KG):</label>
                                         <div class="col-sm-10">
                                             <input type="number" class="form-control form-field" id="weight"
-                                                placeholder="" name="weight" value="">
-                                            <span class="help-block"></span>
+                                                placeholder="" name="weight" value="" required>
+                                            <span>Please, provie the weight of the book in kilograms.</span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-2" for="height">Height (CM):</label>
                                         <div class="col-sm-10">
                                             <input type="number" class="form-control form-field" id="height"
-                                                placeholder="" name="height" value="">
+                                                placeholder="" name="height" value="" required>
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
@@ -296,7 +141,7 @@ updateFields();
                                         <label class="control-label col-sm-2" for="width">Width (CM):</label>
                                         <div class="col-sm-10">
                                             <input type="number" class="form-control form-field" id="width"
-                                                placeholder="" name="width" value="">
+                                                placeholder="" name="width" value="" required>
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
@@ -304,8 +149,8 @@ updateFields();
                                         <label class="control-label col-sm-2" for="length">Length (CM):</label>
                                         <div class="col-sm-10">
                                             <input type="number" class="form-control form-field" id="length"
-                                                placeholder="" name="length" value="">
-                                            <span class="help-block"></span>
+                                                placeholder="" name="length" value="" required>
+                                            <span>Please, provide dimentions in HxWxL format</span>
                                         </div>
                                     </div>
 
@@ -314,17 +159,7 @@ updateFields();
                                 </div>
                             </div>
                         </div>
-                        <!-- Footer -->
-                        <footer class="page-footer font-small blue">
 
-                            <!-- Copyright -->
-                            <div class="footer-copyright text-center py-3">© 2019 Copyright:
-                                <a href="https://mdbootstrap.com/education/bootstrap/"> goodmovies</a>
-                            </div>
-                            <!-- Copyright -->
-
-                        </footer>
-                        <!-- Footer -->
                     </div>
 
                 </div>
@@ -332,7 +167,6 @@ updateFields();
         </div>
     </div>
     <script src="./js/productTypeHandling.js">
-
     </script>
 
 </body>
