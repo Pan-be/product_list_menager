@@ -34,19 +34,6 @@
 
     <link href="./css/style.css" rel="stylesheet" type="text/css">
 
-    <style>
-    .page-link {
-        background-color: unset !important;
-        padding: 6px 12px 6px 12px !important;
-        color: white;
-        border: none;
-    }
-
-    .page-item {
-        padding-bottom: 4px;
-    }
-    </style>
-
 
 </head>
 
@@ -60,10 +47,10 @@
 
                         <div class="row">
                             <div class="col-sm-12">
-                                <div id="add-movie-header">
+                                <div id="add-product-header">
                                     <!-- <h4>Add Movie</h4> -->
                                 </div>
-                                <div id="add-movie-form-container">
+                                <div id="add-product-form-container">
                                     <form class="form-horizontal" method="post" id="product_form"
                                         action='add-product.php' autocomplete="off" enctype="multipart/form-data" />
                                     <div class="form-group">

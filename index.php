@@ -30,8 +30,8 @@
             <header>
                 <h1>Product List</h1>
                 <ul class="menu-items">
-                    <li class="menu-item"><a href="add-product.php">add</a></li>
-                    <li><button id="delete-product-btn" type="submit" name="delete_products">mass delete</button></li>
+                    <li class="menu-item"><a href="add-product.php">ADD</a></li>
+                    <li><button id="#delete-product-btn" type="submit" name="delete_products">MASS DELETE</button></li>
                 </ul>
             </header>
             <main>

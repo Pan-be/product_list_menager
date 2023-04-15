@@ -14,14 +14,12 @@ class ProductsController
 
     public function addProduct()
     {
-        // walidacja pola sku
     $sku = isset($_POST['sku']) ? $_POST['sku'] : null;
     if (empty($sku)) {
         echo "Sku field is required";
         return;
     }
 
-    // sprawdzenie czy sku jest unikalne
     $existing_product = $this->crud->read("SELECT * FROM products WHERE sku='$sku'");
     if ($existing_product) {
         echo "Product with this sku already exists";
